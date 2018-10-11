@@ -3,6 +3,9 @@ import random
 
 x= random.randint(6,9)
 print x
+
+with open('C:\\Python27\\Scripts\\omnipay\\log.txt','w+') as file:
+	file.write("App  is running in 808"+str(x))
 os.chdir('C:\\Python27\\Scripts\\omnipay')
 
 
