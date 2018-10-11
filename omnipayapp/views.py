@@ -9,5 +9,5 @@ from django.http import HttpResponse
 # Adding Comments
 
 def hello(request):
-   text = """<h2>Welcome to Omnipayapp! and  Changesssss  made</h2>"""
+   text = """<h2>Welcome to Omnipayapp and making a change!</h2>"""
    return HttpResponse(text)
