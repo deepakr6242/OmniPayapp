@@ -6,6 +6,8 @@ from django.http import HttpResponse
 
 # Adding Comments
 
+# Adding Comments
+
 def hello(request):
-   text = """<h2>Welcome to Omnipayapp! and  Change  made</h2>"""
+   text = """<h2>Welcome to Omnipayapp! and  Changesssss  made</h2>"""
    return HttpResponse(text)
