@@ -4,8 +4,8 @@ import random
 port_end_digit= random.randint(6,9)
 print port_end_digit
 
-with open('C:\\Python27\\Scripts\\omnipay\\log.txt','w+') as file:
-	file.write("App  is running in 808"+str(port_end_digit))
+with open('C:\\Python27\\Scripts\\omnipay\\log.txt','a+') as file:
+	file.write("App  is running in 808"+str(port_end_digit)+'\n')
 os.chdir('C:\\Python27\\Scripts\\omnipay')
 
 
