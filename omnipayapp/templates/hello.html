@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<head>
+	<title>Recruitment Form</title>
+</head>
+{% csrf_token %}
+{% block content %}
+{% endblock %}
+
+<h2> Recruitment Form</h2>
+<body>
+<div class="topcorner"><a href="http://localhost:8000/recruitmentapp/login">Admin</a></div>
+<style>
+.topcorner{
+    position:absolute;
+    top:20px;
+    right: 100px;
+ }
+</style>
+
+<form class="login-form" method="Post"> 
+  <div class="modal-header">
+    
+    
+  <div class="modal-body">
+        
+        <div class="fieldWrapper form-group  has-feedback">
+            <label class="control-label" for="name">Name</label>
+            <input class="form-control" id="name" type="text" name="name" value="">
+            
+        </div>
+
+        <div class="fieldWrapper form-group  has-feedback">
+            <label class="control-label" for="experience">Experience(Years)</label>
+            <input class="form-control" id="experience" type="text" name="experience" value="">
+            
+        </div>
+
+        <div class="fieldWrapper form-group  has-feedback">
+            <label class="control-label" for="language">Programming langauage</label>
+            <input class="form-control" id="language" type="text" name="language" value="">
+            
+        </div>
+        
+  </div>
+  <div class="modal-footer">
+<button type="button" class="btn btn-default" id ="submit" data-dismiss="modal">submit</button>
+<button type="reset" class="btn btn-default"  id ="RESET" data-dismiss="modal">Reset</button>
+</div>
+</form>
