@@ -16,3 +16,6 @@ App  is running in 8089
 App  is running in 8085
 App  is running in 8085
 App  is running in 8087
+App  is running in 8088
+App  is running in 8083
+App  is running in 8081
